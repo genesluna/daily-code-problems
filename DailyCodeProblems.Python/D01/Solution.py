@@ -1,6 +1,6 @@
 # Unperformant version O(n^2)
 def run(numbers_list, k):
-
+    # list search is O(n)
     for number in numbers_list:
         if k - number in numbers_list:
             return True
