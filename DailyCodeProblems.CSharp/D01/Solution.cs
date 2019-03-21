@@ -24,11 +24,11 @@ namespace DailyCodeProblems.D01
         }
 
         // More peformant version O(n)
-        public static bool RunV2(List<int> numberlist, int k)
+        public static bool RunV2(List<int> numbersList, int k)
         {
             var knownNumbers = new HashSet<int>();
 
-            foreach (var number in numberlist)
+            foreach (var number in numbersList)
             {   // hash sets search is O(1)  
                 if (knownNumbers.Contains(k - number))
                 {
