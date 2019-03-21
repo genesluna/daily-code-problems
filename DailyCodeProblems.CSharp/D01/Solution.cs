@@ -5,7 +5,7 @@ using System.Text;
 
 namespace DailyCodeProblems.D01
 {
-    class Solution
+    public static class Solution
     {
         public static bool Run(List<int> numberlist, int k)
         {  
