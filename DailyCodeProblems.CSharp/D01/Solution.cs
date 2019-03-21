@@ -8,12 +8,12 @@ namespace DailyCodeProblems.D01
     public static class Solution
     {
         // Unperformant version O(n^2)
-        public static bool Run(List<int> numberlist, int k)
+        public static bool Run(List<int> numbersList, int k)
         {  
-            foreach (var number in numberlist)
+            foreach (var number in numbersList)
             {
                 // list search is O(n)
-                if (numberlist.Any(x => x == Math.Abs(number - k)))
+                if (numbersList.Any(x => x == k - number))
                 {
                     return true;
                 }
@@ -26,16 +26,16 @@ namespace DailyCodeProblems.D01
         // More peformant version O(n)
         public static bool RunV2(List<int> numberlist, int k)
         {
-            var knownNumers = new HashSet<int>();
+            var knownNumbers = new HashSet<int>();
 
             foreach (var number in numberlist)
             {   // hash sets search is O(1)  
-                if (knownNumers.Contains(k-number))
+                if (knownNumbers.Contains(k - number))
                 {
                     return true;
                 }
 
-                knownNumers.Add(number);
+                knownNumbers.Add(number);
 
             }
 
