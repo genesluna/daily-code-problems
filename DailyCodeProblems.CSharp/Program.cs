@@ -8,7 +8,7 @@ namespace DailyCodeProblems
     {
         static void Main(string[] args)
         {
-            var response = D02.Solution.Run(new List<int> { 1, 2, 3, 4, 5 });
+            var response = D02.Solution.RunV2(new int[] { 1, 2, 3, 4, 5 });
 
             Console.WriteLine(JsonConvert.SerializeObject(response));
         }

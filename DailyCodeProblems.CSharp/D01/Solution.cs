@@ -7,7 +7,7 @@ namespace DailyCodeProblems.D01
 {
     public static class Solution
     {
-        // unperformant version O(n^2)
+        // Unperformant version O(n^2)
         public static bool Run(List<int> numberlist, int k)
         {  
             foreach (var number in numberlist)
@@ -23,7 +23,7 @@ namespace DailyCodeProblems.D01
             return false;
         }
 
-        //More peformant version O(n)
+        // More peformant version O(n)
         public static bool RunV2(List<int> numberlist, int k)
         {
             var knownNumers = new HashSet<int>();
