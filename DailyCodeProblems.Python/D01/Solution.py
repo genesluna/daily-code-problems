@@ -1,9 +1,9 @@
 from math import fabs
 
-def run(lst, k):
+def run(numbers_list, k):
 
-    for num in lst:
-        if fabs(k - num) in lst:
+    for number in numbers_list:
+        if fabs(k - number) in numbers_list:
             return True
 
     return False
