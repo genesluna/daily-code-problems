@@ -9,7 +9,6 @@ def run(numbers_list):
         product = np.prod(exept_i)
         response.append(product)
 
-
     return response
 
 # More peformant version O(n)
