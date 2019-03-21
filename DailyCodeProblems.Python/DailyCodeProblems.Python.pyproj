@@ -27,13 +27,17 @@
     <Compile Include="D01\__ init __.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="D02\Solution.py" />
+    <Compile Include="D02\__ init __.py" />
     <Compile Include="DailyCodeProblems.Python.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="D01\" />
+    <Folder Include="D02\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="D01\README.md" />
+    <Content Include="D02\README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

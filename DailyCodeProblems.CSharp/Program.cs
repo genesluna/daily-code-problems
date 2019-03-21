@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 
 namespace DailyCodeProblems
@@ -7,8 +8,9 @@ namespace DailyCodeProblems
     {
         static void Main(string[] args)
         {
-            var response = D01.Solution.Run(new List<int> { 10, 15, 2, 6 }, 17);
-            Console.WriteLine(response);
+            var response = D02.Solution.Run(new List<int> { 1, 2, 3, 4, 5 });
+
+            Console.WriteLine(JsonConvert.SerializeObject(response));
         }
     }
 }

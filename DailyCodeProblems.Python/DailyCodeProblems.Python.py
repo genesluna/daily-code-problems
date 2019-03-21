@@ -1,5 +1,5 @@
-from D01 import Solution
+from D02 import Solution
 
-response = Solution.run([10, 15, 3, 7], 17)
+response = Solution.run([1, 2, 3, 4, 5])
 
 print(response)
